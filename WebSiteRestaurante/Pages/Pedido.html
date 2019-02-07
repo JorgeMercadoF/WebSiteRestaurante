@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pedido</title>
+    <link rel="stylesheet" href="../Css/Pedido.css"/>
+    <script src="../Scripts/Pedido.js"></script>
+</head>
+<body>
+    <header>Selección de menus</header>
+    <div id="cuadroIzquierda">
+        <div id="cuadroPrincipal">
+            <article id="div_SeleccionPlatos">
+                <h1>Platos a Elegir</h1>
+                <section id="div_primeros">
+                    <h1> Primeros </h1>
+                    <p draggable="true" ondrag="handleDrag(event)">Sopa </p>
+                    <p draggable="true" ondrag="handleDrag(event)">Ensalada </p>
+                    <p draggable="true" ondrag="handleDrag(event)">Paella </p>
+                </section>
+
+                <section id="div_segundos">
+                    <h1> Segundos </h1>
+                    <p draggable="true" ondrag="handleDrag(event)">Atún</p>
+                    <p draggable="true" ondrag="handleDrag(event)">Ternera</p>
+                    <p draggable="true" ondrag="handleDrag(event)">San Jacobos</p>
+                </section>
+
+                <section id="div_Postre">
+                    <h1> Postres </h1>
+                    <p draggable="true" ondrag="handleDrag(event)"> Helado
+                    <p draggable="true" ondrag="handleDrag(event)"> Fruta
+                </section>
+            </article>
+        </div>
+        <div id="cuadroSeleccion">
+            <article id="div_MenuSeleccionado">
+                <h1>Menu del día Seleccionado</h1> 
+                <section id="div_primeroSel" ondragover="handleDragOver(event);" ondrop="handleDrop(event);">
+                    <h1>Primero Elegido en el menú del día</h1>
+                </section>
+                <section id="div_segundoSel" ondragover="handleDragOver(event);" ondrop="handleDrop(event);">
+                    <h1>Segundo Elegido en el menú del día</h1>
+                </section>
+                <section id="div_postreSel" ondragover="handleDragOver(event);" ondrop="handleDrop(event);">
+                    <h1>Postre Elegido en el menú del día</h1>
+                </section>
+            </article>
+            <article id="datosExtras">
+                <div>
+                    <input type="checkbox" name="cafe" value="cafe"> Café o Carajillo
+                </div>
+                <input type="button" name="Pedir" value="pedir" />
+                <nav>
+                    <input type="button" onclick="location.href='video.html';" value="Video y Audio" />
+                    <a href="VerPeticiones.html" class="button">VerPeticiones</a>
+                </nav>
+                <input type="text" placeholder="NombreCliente" id="Nombre" />
+            </article>
+        </div>
+    </div>
+    <footer>
+        <p> Para más información ..... </p>
+    </footer>
+</body>
+
+</html>
